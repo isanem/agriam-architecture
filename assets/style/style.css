@@ -1,0 +1,66 @@
+@import url('//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+ul {
+    background-color: #cfc3c3;
+}
+
+li, a, button {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    background-color: #cfc3c3;
+    font-size: 18px;
+    color: #4B5B2E;
+    text-decoration: none;
+}
+
+header {
+    height: 60px;
+    background-color: #cfc3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(80, 46, 46);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(75, 91, 46, 1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(75, 91, 46, 0.8);
+}

@@ -1,22 +1,11 @@
 @import url('//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: white;
-}
-
-ul {
-    background-color: #cfc3c3;
-}
-
-li, a, button {
-    font-family: "ISOCPEUR", sans-serif;
-    font-weight: 500;
-    background-color: #cfc3c3;
-    font-size: 18px;
-    color: #4B5B2E;
     text-decoration: none;
 }
 
@@ -28,27 +17,74 @@ header {
     align-items: center;
     padding: 30px 10%;
 }
+h2 {
+    font-family: 'Chonburi', sans-serif;
+    text-transform: uppercase;
+    color: #cfc3c3;
+    background-color: #4B5B2E;
+    font-size: 42px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+h3 {
+    font-family: 'Chonburi', sans-serif;
+    text-transform: uppercase;
+    color: #4B5B2E;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+p, li {
+    font-family: "ISOCPEUR", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+.header-links {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    background-color: #cfc3c3;
+    font-size: 20px;
+    color: #4B5B2E;
+}
 
 .logo {
     height: 60px;
     cursor: pointer;
 }
 
-.nav-links {
+.header-nav {
     list-style: none;
+    background-color: #cfc3c3;
 }
 
-.nav-links li {
+.header-nav li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav-links li a {
+.header-nav li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover {
-    color: rgb(80, 46, 46);
+.header-nav li a:hover {
+    color: white;
+}
+
+.active {
+    color: rgba(75, 91, 46, 0.6);
+}
+
+.cta {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 button {
@@ -63,4 +99,80 @@ button {
 
 button:hover {
     background-color: rgba(75, 91, 46, 0.8);
+}
+
+.headings {
+    display: flex;
+    background-color: #4B5B2E;
+}
+
+.sub-headings {
+    display: flex;
+}
+
+.center-item {
+    margin: auto;
+    font-family: "ISOCPEUR", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 30px;
+    padding-bottom: 10px;
+    width: 50%;
+}
+
+.info {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.info img {
+    margin: 20px 10%;
+    width: 80%;
+}
+
+#form {
+    padding: 20px;
+}
+
+.form-control {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.form-button {
+    text-align: right;    
+    padding-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #4b5b2e;
+}
+
+footer p, .footer-links {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgba(75, 91, 46, 1);
+    color: #cfc3c3;
+    list-style: none;
+}
+
+.footer-links:hover {
+    color: white;
+}
+
+.social, a, i{
+    background-color: #4B5B2E;
+    color: #cfc3c3;
+    font-size: 22px;
+    margin-right: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.social i:hover {
+    color: white;
 }

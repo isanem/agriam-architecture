@@ -127,12 +127,11 @@ button:hover {
 }
 
 .info img {
-    margin: 20px 10%;
-    width: 10%;
+    width: 100%;
 }
 
 .wrapper {
-    width: 640px;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,43 +140,19 @@ button:hover {
 }
 
 .slides-inner {
-    position: relative;
+    width: 100%;
     overflow: hidden;
-    float: left;
-    height: 400px;
-    width: 600px;
-    /* padding: 3px; */
-}
-
-.prev, .next {
-    float: left;
-    margin-top: 190px;
-    cursor: pointer;
-}
-
-.prev {
-    position: relative;
-    margin-right: -30px;
-    z-index: 100;
-}
-
-.next {
-    position: relative;
-    margin-left: -25px;
-    z-index: 100;
+    padding: 5px;
 }
 
 .slides-inner img {
-    display: none;
-    z-index: -10;
-    height: 400px;
-    width: 600px;
-}
+    width: 100%;
+    padding: 5px;
+} 
 
-.slides-inner img.show {
-    display: inline-block;
-    z-index: 10;
-    /* border-radius: 10px; */
+.p-inner {
+    width: 100%;
+    padding: 5px;
 }
 
 #form {

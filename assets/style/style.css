@@ -104,12 +104,12 @@ button:hover {
 }
 
 .headings {
-    display: flex;
+    text-align: center;
     background-color: #4B5B2E;
 }
 
 .sub-headings {
-    display: flex;
+    text-align: center;
 }
 
 .center-item {
@@ -138,6 +138,35 @@ button:hover {
     justify-content: center;
     overflow: auto;
     margin: 20px auto;
+}
+
+.services {
+    display: grid;
+    grid-template-areas: 
+        "service1 service1 service2 service2"
+        "service3 service3 service4 service4";
+    gap : 15px 15px;
+}
+
+.service1 {
+    grid-area: service1;
+}
+
+.service2 {
+    grid-area: service2;
+}
+
+.service3 {
+    grid-area: service3;
+}
+
+.service4 {
+    grid-area: service4;
+}
+
+[class*="service"] h3 {
+    height: 100px;
+    
 }
 
 .slides-inner {

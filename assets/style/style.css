@@ -145,7 +145,8 @@ button:hover {
     grid-template-areas: 
         "service1 service1 service2 service2"
         "service3 service3 service4 service4";
-    gap : 15px 15px;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 18px 18px;
 }
 
 .service1 {
@@ -165,8 +166,8 @@ button:hover {
 }
 
 [class*="service"] h3 {
-    height: 100px;
-    
+    height: 125px;
+    /* padding: 50px; */
 }
 
 .slides-inner {

@@ -92,7 +92,7 @@ nav {
 }
 
 .nav-links li a {
-    /* transition: all 0.3s ease 0s; */
+    transition: all 0.3s ease 0s;
     background-color: #cfc3c3;
     color: #4B5B2E;
 }
@@ -244,25 +244,47 @@ button:hover {
     padding: 25px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
 
-#form {
-    padding: 20px;
+.form-field {
+    margin-top: 25px;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.form-field label {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.input-field input {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
 }
 
 .form-control {
     width: 100%;
-    line-height: 1.5;
 }
 
 .form-button {
-    text-align: right;    
-    padding-top: 20px;
+    align-self: flex-end;    
+    padding: 20px 0;
+    margin-right: 23%;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    bottom: 0;
+    width: 100%;
     padding: 30px 10%;
     background-color: #4b5b2e;
 }
@@ -415,6 +437,11 @@ footer p, .footer-links {
         grid-template-columns: repeat(1, 1fr);
         gap: 0 0;
     }
+
+    .form-field {
+        width: 80%;
+        
+    }
     
     footer {
         padding: 20px 5%;
@@ -445,12 +472,36 @@ footer p, .footer-links {
         margin-bottom: 20px;
     }
 
+    form {
+        height: 85vh;
+    }
+
+    .form-field {
+        margin-top: 20px;
+        width: 70%;
+    }
+    
+    .form-field label {
+        font-size: 18px;
+    }
+    
+    .input-field input {
+        font-size: 18px;
+    }
+
+    .form-button {
+        margin-right: 15%;
+    }
+
     footer p, .footer-links {
         font-size: 15px;
     }
+
+    
     
     .social, a, i{
         margin-right: 1px;
+        font-size: 18px;
     }
     
 }

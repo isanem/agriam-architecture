@@ -6,29 +6,34 @@
         <title>Agriam Architecture</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/601324f7cb.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/style/style.css">
+        <link href="//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header>
-            <img class="logo" src="assets/img/logo.jpg" alt="logo">
+            <div class="nav-logo">
+                <img class="logo" src="assets/img/logo.jpg" alt="logo">
+            </div>
             <nav>
-                <ul class="header-nav">
-                    <li class="header-links"><a class="header-links active" href="/index.html">Hem</a></li>
-                    <li class="header-links"><a class="header-links" href="/projects.html">Projekt</a></li>
-                    <li class="header-links"><a class="header-links" href="/services.html">Tjänster</a></li>
-                    <li class="header-links"><a class="header-links" href="/about.html">Om Mig</a></li>
+                <ul class="nav-links">
+                    <li><a href="#">Hem</a></li>
+                    <li><a href="#projects">Projekt</a></li>
+                    <li><a href="#services">Tjänster</a></li>
+                    <li><a href="#about">Om Mig</a></li>
                 </ul>
+                <a class="nav-btn" href="/contact.html"><button class="cta">Ta Kontakt</button></a>
+                <div class="burger-nav">
+                    <div class="line-top"></div>
+                    <div class="line-mid"></div>
+                    <div class="line-bottom"></div>
+                </div>
             </nav>
-            <a class="header-links" href="/contact.html"><button class="cta">Ta Kontakt</button></a>
         </header>
-        <div class="headings">
+        <div class="first-heading headings">
             <h2>Kontakt</h2>
         </div>    
-        <section class="center-item">
-            <div id="form"> 
+        <section class="form">
             <form action="">
-                
                 <div class="form-field">
                     <label for="Name" class="form-label">Namn</label>
                     <div class="input-field">
@@ -53,36 +58,46 @@
                 <div class="form-field">
                     <label for="Message" class="form-label">Meddelande</label>
                     <div class="input-field">
-                        <textarea id="Message" name="Message" class="form-control" rows="6" maxlength="3000" required></textarea>
+                        <textarea id="Message" name="Message" class="form-control" rows="7" maxlength="3000" required></textarea>
                     </div>
                 </div>
                 <div class="form-button">
                     <div>
-                        <button type="submit" id="form-button" class="cta">Ta Kontakt</button>
+                        <button type="submit" id="form-button" class="cta">Skicka</button>
                     </div>
                 </div>
-        
             </form>
-            </div>
         </section>
-        <footer>
-            <div class="footer-nav">
-                <ul class="sitemap">
-                    <li class="footer-links"><a class="footer-links" href="/index.html">Hem</a></li>
-                    <li class="footer-links"><a class="footer-links" href="/projects.html">Projekt</a></li>
-                    <li class="footer-links"><a class="footer-links" href="/services.html">Tjänster</a></li>
-                    <li class="footer-links"><a class="footer-links" href="/about.html">Om Mig</a></li>
-                </ul>
-            </div>
-            <div class="partners">
-                <p>Samarbetspartners</p>
-            </div>
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </footer>
+        <div>
+            <footer>
+                <div class="footer-nav">
+                    <ul class="sitemap">
+                        <li class="footer-links"><a class="footer-links" href="/index.html">Hem</a></li>
+                        <li class="footer-links"><a class="footer-links" href="/projects.html">Projekt</a></li>
+                        <li class="footer-links"><a class="footer-links" href="/services.html">Tjänster</a></li>
+                        <li class="footer-links"><a class="footer-links" href="/about.html">Om Mig</a></li>
+                    </ul>
+                </div>
+                <div class="partners">
+                    <p>Samarbetspartners</p>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </footer>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/601324f7cb.js" crossorigin="anonymous"></script>
+
+        <!-- Custom Javasript -->
+        <script src="assets/js/burger.js"></script>
+
     </body>
 </html>

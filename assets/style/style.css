@@ -1,5 +1,13 @@
-@import url('//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR');
-@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap');
+@import url(//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR);
+@import url(https://fonts.googleapis.com/css2?family=Chonburi&display=swap);
+
+@font-face {font-family: "ISOCPEUR"; src: url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.eot"); 
+    src: url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.svg#ISOCPEUR") format("svg"); 
+}
 
 * {
     box-sizing: border-box;
@@ -7,15 +15,6 @@
     padding: 0;
     background-color: white;
     text-decoration: none;
-}
-
-header {
-    height: 60px;
-    background-color: #cfc3c3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
 }
 
 h2 {
@@ -27,7 +26,6 @@ h2 {
     margin: 0 auto;
     padding: 25px;
 }
-
 
 h3 {
     font-family: 'Chonburi', sans-serif;
@@ -48,12 +46,35 @@ p {
     margin-bottom: 25px;
 }
 
-.header-links {
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cfc3c3;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #cfc3c3;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
     font-family: "ISOCPEUR", sans-serif;
+    color: #4B5B2E;
     font-weight: 500;
+    width: 45%;
     background-color: #cfc3c3;
     font-size: 20px;
-    color: #4B5B2E;
 }
 
 .logo {
@@ -61,26 +82,31 @@ p {
     cursor: pointer;
 }
 
-.header-nav {
-    list-style: none;
+.nav-logo {
+    background-color: #cfc3c3;
+    margin-left: 20px;
+}
+
+.nav-links li {
     background-color: #cfc3c3;
 }
 
-.header-nav li {
-    display: inline-block;
-    padding: 0px 20px;
+.nav-links li a {
+    /* transition: all 0.3s ease 0s; */
+    background-color: #cfc3c3;
+    color: #4B5B2E;
 }
 
-.header-nav li a {
-    transition: all 0.3s ease 0s;
-}
-
-.header-nav li a:hover {
+.nav-links li a:hover {
     color: white;
 }
 
 .active {
     color: rgba(75, 91, 46, 0.6);
+}
+
+.nav-btn {
+    background-color: #cfc3c3;
 }
 
 .cta {
@@ -91,6 +117,7 @@ p {
 
 button {
     padding: 9px 25px;
+    margin: 0 25px;
     background-color: rgba(75, 91, 46, 1);
     color: white;
     border: none;
@@ -103,27 +130,36 @@ button:hover {
     background-color: rgba(75, 91, 46, 0.8);
 }
 
+.burger-nav {
+    display: none;
+    cursor: pointer;
+    margin: 0 25px;
+    background-color: #cfc3c3;
+}
+
+.burger-nav div {
+    width: 25px;
+    height: 4px;
+    margin: 5px;
+    background-color: #4B5B2E;
+}
+
+.first-heading {
+    margin-top: 60px;
+}
+
 .headings {
     text-align: center;
     background-color: #4B5B2E;
+    letter-spacing: 2px;
 }
 
 .sub-headings {
     text-align: center;
 }
 
-.center-item {
-    margin: auto;
-    font-family: "ISOCPEUR", sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    padding: 0 30px;
-    padding-bottom: 10px;
-    width: 50%;
-}
-
 .info {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -131,22 +167,60 @@ button:hover {
     width: 100%;
 }
 
-.wrapper {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-    margin: 20px auto;
+.project-container1 {
+    display: grid;
+    grid-template-areas: 
+    "slides-outer1 slides-outer1 p-slide1";
+    gap: 18px 18px;
+}
+
+.project-container2 {
+    display: grid;
+    grid-template-areas: 
+    "p-slide2 slides-outer2 slides-outer2";
+    gap: 18px 18px;
+}
+
+.slides-inner {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.slides-inner img {
+    width: 100%;
+    padding: 15px;
+} 
+
+#slides-outer1 {
+    grid-area: slides-outer1;
+}
+
+#slides-outer2 {
+    grid-area: slides-outer2;
+}
+
+#p-slide1 {
+    grid-area: p-slide1;
+    align-self: center;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#p-slide2 {
+    grid-area: p-slide2;
+    align-self: center;
+    padding: 10px;
+    margin-left: 20px;
 }
 
 .services {
     display: grid;
     grid-template-areas: 
-        "service1 service1 service2 service2"
-        "service3 service3 service4 service4";
-    grid-template-columns: repeat(4, 1fr);
-    gap : 18px 18px;
+        "service1 service2 service3 service4";
+        grid-template-columns: repeat(4, 1fr);
+    gap: 18px 18px;
+    margin: 0 30px;
 }
 
 .service1 {
@@ -167,24 +241,9 @@ button:hover {
 
 [class*="service"] h3 {
     height: 125px;
-    /* padding: 50px; */
+    padding: 25px;
 }
 
-.slides-inner {
-    width: 100%;
-    overflow: hidden;
-    padding: 5px;
-}
-
-.slides-inner img {
-    width: 100%;
-    padding: 5px;
-} 
-
-.p-inner {
-    width: 100%;
-    padding: 5px;
-}
 
 #form {
     padding: 20px;
@@ -231,4 +290,167 @@ footer p, .footer-links {
 
 .social i:hover {
     color: white;
+}
+
+/* For laptop screens */
+
+@media screen and (max-width: 1920px) {
+    .services {
+        grid-template-areas: 
+            "service1 service2"
+            "service3 service4";
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 20px;
+        gap: 14px 14px;
+    }
+
+}
+
+/* For tablet screens */
+
+@media screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 35px;
+        padding: 18px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    [class*="service"] h3 {
+        height: 50px;
+        padding: 10px;
+    }
+
+    nav {
+        justify-content: flex-end;
+        
+    }
+
+    .nav-logo {
+        justify-self: flex-start;
+    }
+
+    .nav-links {
+        transform: translateX(100%);
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        position: absolute;
+        justify-content: space-evenly;
+        right: 0;
+        top: 60px;
+        height: calc(100vh - 60px);
+        width: 35%;
+        background-color: #4B5B2E;
+    }
+    
+    .nav-links li {
+        background-color: #4B5B2E;
+        
+    }
+    
+    .nav-links li a {
+        color: #cfc3c3;
+        background-color: #4B5B2E;
+        font-size: 20px;
+        padding: 0 25px;
+    }
+
+    button {
+        margin: 0;
+    }
+
+    .burger-nav {
+        display: block;
+        background-color: #cfc3c3;
+    }
+
+    .burger-nav-active {
+        transform: translateX(0%);
+    }
+    
+    .info {
+        width: 75%;
+    }
+
+    .project-container1 {
+        display: grid;
+        grid-template-areas: 
+        "slides-outer1"
+        "p-slide1";
+        gap: 0 0;
+    
+    }
+    
+    .project-container2 {
+        display: grid;
+        grid-template-areas: 
+        "slides-outer2"
+        "p-slide2";
+        gap: 0 0;
+    
+    }
+
+    .p-slide {
+        text-align: center;
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    #p-slide2 {
+        margin-bottom: 20px;
+    }
+
+    .services {
+        
+        grid-template-areas: 
+            "service1" 
+            "service2"
+            "service3"
+            "service4";
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0 0;
+    }
+    
+    footer {
+        padding: 20px 5%;
+    }
+
+}
+
+/* For smartphone screens */
+
+@media screen and (max-width: 480px) {
+
+    h2 {
+        font-size: 25px;
+        padding: 14px;
+    }
+    
+    h3 {
+        font-size: 14px;
+        padding: 18px;
+    }
+
+    p, li {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    p {
+        margin-bottom: 20px;
+    }
+
+    footer p, .footer-links {
+        font-size: 15px;
+    }
+    
+    .social, a, i{
+        margin-right: 1px;
+    }
+    
 }

@@ -7,67 +7,77 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/style/style.css">
+        <link href="//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header>
-            <img class="logo" src="assets/img/logo.jpg" alt="logo">
+            <div class="nav-logo">
+                <img class="logo" src="assets/img/logo.jpg" alt="logo">
+            </div>
             <nav>
-                <ul class="header-nav">
-                    <li class="header-links"><a class="header-links active" href="#">Hem</a></li>
-                    <li class="header-links"><a class="header-links" href="#projects">Projekt</a></li>
-                    <li class="header-links"><a class="header-links" href="#services">Tjänster</a></li>
-                    <li class="header-links"><a class="header-links" href="#about">Om Mig</a></li>
+                <ul class="nav-links">
+                    <li><a href="#">Hem</a></li>
+                    <li><a href="#projects">Projekt</a></li>
+                    <li><a href="#services">Tjänster</a></li>
+                    <li><a href="#about">Om Mig</a></li>
                 </ul>
+                <a class="nav-btn" href="/contact.html"><button class="cta">Ta Kontakt</button></a>
+                <div class="burger-nav">
+                    <div class="line-top"></div>
+                    <div class="line-mid"></div>
+                    <div class="line-bottom"></div>
+                </div>
             </nav>
-            <a class="header-links" href="/contact.html"><button class="cta">Ta Kontakt</button></a>
         </header>
-        <div class="headings">
+        <div class="first-heading headings">
             <h2>Projekt</h2>
         </div>
         <div class="sub-headings">
             <h3>Attefallshus Hösten 2019</h3>
         </div>
         <section class="wrapper">
-            <div class="slides-outer">
-                <div class="slides-inner">
-                    <img src="../assets/img/attefall-fall-2019-1.jpg" class="slide1" alt="">
-                    <img src="../assets/img/attefall-fall-2019-2.jpg" class="slide1" alt="">
-                    <img src="../assets/img/attefall-fall-2019-3.jpg" class="slide1" alt="">
-                    <img src="../assets/img/attefall-fall-2019-4.jpg" class="slide1" alt="">
-                    <img src="../assets/img/attefall-fall-2019-5.jpg" class="slide1" alt="">
-                    <img src="../assets/img/attefall-fall-2019-6.jpg" class="slide1" alt="">
-                    <img src="../assets/img/attefall-fall-2019-7.jpg" class="slide1" alt="">
-                </div>
-            </div>          
-            <p class="p-inner">
-                I det första husprojektet i utbildningen skapades ett Attefallshus.
-                Jag ville utmana mig själv genom att skapa utrymme för förvaring och 
-                sovplats för fem personer i ett Attefallshus på 25-30kvm. Fasaden gavs en 
-                karaktär av ett vilda Western med horisontellt liggande grå plank och grönt tak.
-            </p>
-        </section>  
-        <div class="sub-headings">
-            <h3>Villa Hösten 2019</h3>
-        </div>
-        <section class="wrapper">
-            <p class="p-inner">
-                Efter utdelad tomtplats på en villagata gavs fria tyglar att planera ett hus med hänsyn 
-                till markförhållanden, väderstreck, tomt- och byggrättsgräns samt tillgänglighet.
-                Resultatet blev en villa med en planlösning som jag skissat på innan utbildningen, 
-                med några ändringar. Byggnaden är anpassad till topografin och därmed delad i tre 
-                nivåskillnader på första plan. Tre trappsteg binder ihop kök med hall och hall med 
-                byggnadsdelen vardagsrum och badrum. Fasaden tillsammans med rejält tilltagna takytor över 
-                balkongerna är tänkt att ge en karaktär av gammal timmerstuga.
-            </p>
-            <div class="slides-outer">
-                <div class="slides-inner">
-                    <img src="../assets/img/villa-fall-2019-1.jpg" class="slide2" alt="">
-                    <img src="../assets/img/villa-fall-2019-2.jpg" class="slide2" alt="">
-                    <img src="../assets/img/villa-fall-2019-3.jpg" class="slide2" alt="">
-                    <img src="../assets/img/villa-fall-2019-4.jpg" class="slide2" alt="">
-                    <img src="../assets/img/villa-fall-2019-5.jpg" class="slide2" alt="">
-                </div>
-            </div>          
+            <div class="project-container1">
+                <div id="slides-outer1">
+                    <div class="slides-inner">
+                        <img src="../assets/img/attefall-fall-2019-1.jpg" class="slide1" alt="">
+                        <img src="../assets/img/attefall-fall-2019-2.jpg" class="slide1" alt="">
+                        <img src="../assets/img/attefall-fall-2019-3.jpg" class="slide1" alt="">
+                        <img src="../assets/img/attefall-fall-2019-4.jpg" class="slide1" alt="">
+                        <img src="../assets/img/attefall-fall-2019-5.jpg" class="slide1" alt="">
+                        <img src="../assets/img/attefall-fall-2019-6.jpg" class="slide1" alt="">
+                        <img src="../assets/img/attefall-fall-2019-7.jpg" class="slide1" alt="">
+                    </div>
+                </div> 
+                <p class="p-slide" id="p-slide1">
+                    I det första husprojektet i utbildningen skapades ett Attefallshus.
+                    Jag ville utmana mig själv genom att skapa utrymme för förvaring och 
+                    sovplats för fem personer i ett Attefallshus på 25-30kvm. Fasaden gavs en 
+                    karaktär av ett vilda Western med horisontellt liggande grå plank och grönt tak.
+                </p>
+            </div>   
+            <div class="sub-headings">
+                <h3>Villa Hösten 2019</h3>
+            </div>
+            <div class="project-container2">      
+                <p class="p-slide" id="p-slide2">
+                    Efter utdelad tomtplats på en villagata gavs fria tyglar att planera ett hus med hänsyn 
+                    till markförhållanden, väderstreck, tomt- och byggrättsgräns samt tillgänglighet.
+                    Resultatet blev en villa med en planlösning som jag skissat på innan utbildningen, 
+                    med några ändringar. Byggnaden är anpassad till topografin och därmed delad i tre 
+                    nivåskillnader på första plan. Tre trappsteg binder ihop kök med hall och hall med 
+                    byggnadsdelen vardagsrum och badrum. Fasaden tillsammans med rejält tilltagna takytor över 
+                    balkongerna är tänkt att ge en karaktär av gammal timmerstuga.
+                </p>
+                <div id="slides-outer2">
+                    <div class="slides-inner">
+                        <img src="../assets/img/villa-fall-2019-1.jpg" class="slide2" alt="">
+                        <img src="../assets/img/villa-fall-2019-2.jpg" class="slide2" alt="">
+                        <img src="../assets/img/villa-fall-2019-3.jpg" class="slide2" alt="">
+                        <img src="../assets/img/villa-fall-2019-4.jpg" class="slide2" alt="">
+                        <img src="../assets/img/villa-fall-2019-5.jpg" class="slide2" alt="">
+                    </div>
+                </div>     
+            </div>     
         </section>  
         <div class="headings" id="services">
             <h2>Tjänster</h2>

@@ -17,6 +17,12 @@
     text-decoration: none;
 }
 
+/* Fix positioning of headers when using links in combination with fixed navbar */
+
+html {
+    scroll-padding-top: 60px;
+}
+
 h2 {
     font-family: 'Chonburi', sans-serif;
     text-transform: uppercase;
@@ -54,7 +60,7 @@ header {
     top: 0;
     height: 60px;
     width: 100%;
-
+    z-index: 1;
 }
 
 nav {
@@ -101,9 +107,9 @@ nav {
     color: white;
 }
 
-.active {
+/* .active {
     color: rgba(75, 91, 46, 0.6);
-}
+} */
 
 .nav-btn {
     background-color: #cfc3c3;
@@ -144,6 +150,44 @@ button:hover {
     background-color: #4B5B2E;
 }
 
+.toggle .line-top {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line-mid {
+    opacity: 0;
+}
+
+.toggle .line-bottom {
+    transform: rotate(45deg) translate(-6.5px, -7.5px);
+}
+
+.landing {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.landing-showcase {
+    position:absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height:calc(100vh - 60px);
+    overflow: hidden;
+}
+
+.landing-showcase video {
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+    left: 50%;
+    top: calc(50% - 60px);
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
 .first-heading {
     margin-top: 60px;
 }
@@ -159,12 +203,15 @@ button:hover {
 }
 
 .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
     margin: 0 auto;
 }
 
 .info img {
-    width: 100%;
+    width: 300px;
 }
 
 .project-container1 {
@@ -181,13 +228,25 @@ button:hover {
     gap: 18px 18px;
 }
 
+.project-container3 {
+    display: grid;
+    grid-template-areas: 
+    "slides-outer3 slides-outer3 p-slide3";
+    gap: 18px 18px;
+}
+
 .slides-inner {
     width: 100%;
     overflow: hidden;
-    padding: 20px;
+    padding: 40px;
 }
 
 .slides-inner img {
+    width: 100%;
+    padding: 15px;
+} 
+
+.slides-inner video {
     width: 100%;
     padding: 15px;
 } 
@@ -200,6 +259,10 @@ button:hover {
     grid-area: slides-outer2;
 }
 
+#slides-outer3 {
+    grid-area: slides-outer3;
+}
+
 #p-slide1 {
     grid-area: p-slide1;
     align-self: center;
@@ -209,6 +272,13 @@ button:hover {
 
 #p-slide2 {
     grid-area: p-slide2;
+    align-self: center;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#p-slide3 {
+    grid-area: p-slide3;
     align-self: center;
     padding: 10px;
     margin-left: 20px;
@@ -326,6 +396,10 @@ footer p, .footer-links {
         gap: 14px 14px;
     }
 
+    .slides-inner {
+        padding: 10px;
+    }
+
 }
 
 /* For tablet screens */
@@ -358,6 +432,7 @@ footer p, .footer-links {
 
     .nav-links {
         transform: translateX(100%);
+        transition: all 0.3s ease 0s;
         flex-direction: column;
         align-content: center;
         align-items: center;
@@ -394,6 +469,7 @@ footer p, .footer-links {
     .burger-nav-active {
         transform: translateX(0%);
     }
+
     
     .info {
         width: 75%;
@@ -417,6 +493,15 @@ footer p, .footer-links {
     
     }
 
+    .project-container3 {
+        display: grid;
+        grid-template-areas: 
+        "slides-outer3"
+        "p-slide3";
+        gap: 0 0;
+    
+    }
+
     .p-slide {
         text-align: center;
         margin: 0 20px;
@@ -436,6 +521,10 @@ footer p, .footer-links {
             "service4";
         grid-template-columns: repeat(1, 1fr);
         gap: 0 0;
+    }
+
+    .info img {
+        width: 65%;
     }
 
     .form-field {
@@ -496,8 +585,6 @@ footer p, .footer-links {
     footer p, .footer-links {
         font-size: 15px;
     }
-
-    
     
     .social, a, i{
         margin-right: 1px;

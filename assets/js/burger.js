@@ -7,8 +7,9 @@ $(document).ready(function(){
 
         burgerNav.on('click', function() {
             burgerNavLinks.toggleClass('burger-nav-active');
-
+            burgerNav.toggleClass('toggle');
             
         })
+
     }
 });

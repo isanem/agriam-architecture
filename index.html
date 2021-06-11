@@ -11,15 +11,15 @@
     </head>
     <body>
         <header>
-            <div class="nav-logo">
+            <div href="#" class="nav-logo">
                 <img class="logo" src="assets/img/logo.jpg" alt="logo">
             </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#">Hem</a></li>
-                    <li><a href="#projects">Projekt</a></li>
-                    <li><a href="#services">Tjänster</a></li>
                     <li><a href="#about">Om Mig</a></li>
+                    <li><a href="#services">Tjänster</a></li>
+                    <li><a href="#projects">Projekt</a></li>
                 </ul>
                 <a class="nav-btn" href="/contact.html"><button class="cta">Ta Kontakt</button></a>
                 <div class="burger-nav">
@@ -29,7 +29,99 @@
                 </div>
             </nav>
         </header>
-        <div class="first-heading headings">
+        <div class="landing">
+            <div class="landing-showcase">
+                <video autoplay loop muted playsInline>
+                
+                <source 
+                    src="/assets/vid/landing.mp4"
+                    type="video/mp4">
+    
+                    Din webläsare kan tyvärr inte spela upp videon som visas här.
+                </video>
+            </div>
+        </div>
+        <div class="headings" id="about">
+            <h2>Om mig</h2>
+        </div>
+        <div class="sub-headings">
+            <h3>Vem är jag?</h3>
+        </div>
+        <section class="center-items">
+            <div class="info">
+                <p>
+                    Mina projekt har en relation till egna upplevelser från platser
+                    jag varit på, resor, natur och framtidsvisioner.
+                    Skissar och planerar gärna mina idéer på papper med vänster hand.
+                    Till vardags studerar jag planlösningar i inredningstidningar, 
+                    följer intressanta byggprojekt samt ser bygg- 
+                    och inredningsprogram för att fylla på mitt inspirationskonto.
+                </p>
+                <img src="/assets/img/profil1.jpg" alt="profile picture">
+            </div>
+        </section>
+        <div class="sub-headings">
+            <h3>Min utbildning</h3>
+        </div>
+        <section class="center-items">
+            <div class="info">
+                <p>
+                    <ul>
+                        <li>
+                            YRGO-Yrkeshögskolan, Göteborg - BIM-Byggprojektör
+                        </li>
+                        <li>
+                            2019-2021 - 400yh Högre Yrkeshögskoleutbildning Kurser: BIM- (AutoCad, Revit, Naviate, Solibri, Navisworks, Tekla, VicoOffice, ArchiCad, SketchUp, Twinmotion, Enscape, m.fl), Kommunikation, Matematik Bygg, Byggteknik, Byggnadskonstruktion, Installation-MagiCad, Hållbart Byggande, Byggproduktion
+                        </li>
+                        <li>
+                            LIA 1: Studio Ekberg - Projektering Attefallshus - 14 veckor
+                        </li>
+                        <li>
+                            LIA 2: VIA Fashion Outlets - BIM i förvaltning - 12 veckor
+                        </li>
+                        <li>
+                            2021 - Examensarbete: Förvaltning med digitala verktyg
+                        </li>
+                        <li>
+                            Högskolan Dalarna, Distanskurs - Revit-Architecture - 2013 - 5hp, 2017 - 5hp
+                        </li>
+                        <li>
+                            2009-(2012) - 180hp Byggnadsingenjörsutbildning
+                        </li>
+                        <li>
+                            2015 - Examensarbete: Socialt hållbart boende
+                        </li>
+                        <li>
+                            Jönköping Tekniska Högskola, Jönköping - Byggnadsutformning med arkitektur
+                        </li>
+                    </ul>	 
+                </p>
+            </div>
+        </section>
+        <div class="headings" id="services">
+            <h2>Tjänster</h2>
+        </div>
+        <section class="wrapper">
+            <div class="services">
+                <div class="sub-headings service1">
+                    <h3>Rådgivning & visualisering i 3D</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
+                </div>
+                <div class="sub-headings service2">
+                    <h3>Omvandla 2D-ritning till 3D-modell</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
+                </div>
+                <div class="sub-headings service3">
+                    <h3>Bygghandlingar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
+                </div>
+                <div class="sub-headings service4">
+                    <h3>Bygglovshandlingar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
+                </div>
+            </div>
+        </section>
+        <div class="headings" id="projects">
             <h2>Projekt</h2>
         </div>
         <div class="sub-headings">
@@ -77,96 +169,43 @@
                         <img src="../assets/img/villa-fall-2019-5.jpg" class="slide2" alt="">
                     </div>
                 </div>     
-            </div>     
-        </section>  
-        <div class="headings" id="services">
-            <h2>Tjänster</h2>
-        </div>
-        <section class="wrapper">
-            <div class="services">
-                <div class="sub-headings service1">
-                    <h3>Rådgivning & visualisering i 3D</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
-                </div>
-                <div class="sub-headings service2">
-                    <h3>Omvandla 2D-ritning till 3D-modell</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
-                </div>
-                <div class="sub-headings service3">
-                    <h3>Bygghandlingar</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
-                </div>
-                <div class="sub-headings service4">
-                    <h3>Bygglovshandlingar</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius labore aliquid amet repellat! Excepturi tempora pariatur hic iste repudiandae perferendis nisi. Nostrum laborum modi atque labore id qui possimus eligendi.</p>
-                </div>
-            </div>
-        </section>  
-        <div class="headings" id="about">
-            <h2>Om mig</h2>
-        </div>
-        <div class="sub-headings">
-            <h3>Vem är jag?</h3>
-        </div>
-        <section class="center-items">
-            <div class="info">
-                <p>
-                    Mina projekt har en relation till egna upplevelser från platser
-                    jag varit på, resor, natur och framtidsvisioner.
-                    Skissar och planerar gärna mina idéer på papper med vänster hand.
-                    Till vardags studerar jag planlösningar i inredningstidningar, 
-                    följer intressanta byggprojekt samt ser bygg- 
-                    och inredningsprogram för att fylla på mitt inspirationskonto.
+            </div>   
+            <div class="sub-headings">
+                <h3>Lorem ipsum dolor sit amet.
+                </h3>
+            </div> 
+            <div class="project-container3">      
+                <div id="slides-outer3">
+                    <div class="slides-inner">
+                        <video autoplay loop muted playsInline>
+                
+                            <source 
+                                src="/assets/vid/landing.mp4"
+                                type="video/mp4">
+                
+                                Din webläsare kan tyvärr inte spela upp videon som visas här.
+                            </video>
+                    </div>
+                </div>     
+                <p class="p-slide" id="p-slide3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis delectus, eius quas provident 
+                    ullam sunt accusamus fugiat nulla autem, nemo itaque, adipisci iure sequi ratione tenetur 
+                    illo quibusdam cupiditate possimus iusto voluptatum? Repellat eligendi libero alias id 
+                    explicabo tempora porro consequuntur nulla quae autem voluptatibus, eos, 
+                    officiis perferendis odio quasi.
                 </p>
-                <img src="../assets/img/about-img.png" alt="profile picture">
-            </div>
-        </section>
-        <div class="sub-headings">
-            <h3>Min utbildning</h3>
-        </div>
-        <section class="center-items">
-            <div class="info">
-                <p>
-                    <ul>
-                        <li>
-                            YRGO-Yrkeshögskolan, Göteborg - BIM-Byggprojektör
-                        </li>
-                        <li>
-                            2019-2021 - 400yh Högre Yrkeshögskoleutbildning Kurser: BIM- (AutoCad, Revit, Naviate, Solibri, Navisworks, Tekla, VicoOffice, ArchiCad, SketchUp, Twinmotion, Enscape, m.fl), Kommunikation, Matematik Bygg, Byggteknik, Byggnadskonstruktion, Installation-MagiCad, Hållbart Byggande, Byggproduktion
-                        </li>
-                        <li>
-                            LIA 1: Studio Ekberg - Projektering Attefallshus - 14 veckor
-                        </li>
-                        <li>
-                            LIA 2: VIA Fashion Outlets - BIM i förvaltning - 12 veckor
-                        </li>
-                        <li>
-                            2021 - Examensarbete: Förvaltning med digitala verktyg
-                        </li>
-                        <li>
-                            Högskolan Dalarna, Distanskurs - Revit-Architecture - 2013 - 5hp, 2017 - 5hp
-                        </li>
-                        <li>
-                            2009-(2012) - 180hp Byggnadsingenjörsutbildning
-                        </li>
-                        <li>
-                            2015 - Examensarbete: Socialt hållbart boende
-                        </li>
-                        <li>
-                            Jönköping Tekniska Högskola, Jönköping - Byggnadsutformning med arkitektur
-                        </li>
-                    </ul>	 
-                </p>
-            </div>
-        </section>
+            </div> 
+        </section>  
+          
+        
         <div>
             <footer>
                 <div class="footer-nav">
                     <ul class="sitemap">
                         <li class="footer-links"><a class="footer-links" href="#">Hem</a></li>
-                        <li class="footer-links"><a class="footer-links" href="#projects">Projekt</a></li>
-                        <li class="footer-links"><a class="footer-links" href="#services">Tjänster</a></li>
                         <li class="footer-links"><a class="footer-links" href="#about">Om Mig</a></li>
+                        <li class="footer-links"><a class="footer-links" href="#services">Tjänster</a></li>
+                        <li class="footer-links"><a class="footer-links" href="#projects">Projekt</a></li>
                     </ul>
                 </div>
                 <div class="partners">

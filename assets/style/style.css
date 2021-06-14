@@ -203,6 +203,11 @@ button:hover {
     min-height: 100%;
 }
 
+.brand, .headings {
+    background-color: var(--green);
+    letter-spacing: 2px;
+}
+
 .company-info {
     display: grid;
     grid-template-areas: 
@@ -222,13 +227,13 @@ button:hover {
     font-size: 1.2rem;
 }
 
-[class*="heading"] {
+.brand, .p-slide, .copyright, [class*="heading"] {
     text-align: center;
 }
 
 .headings {
-    background-color: var(--green);
-    letter-spacing: 2px;
+    position: sticky;
+    top: var(--bigscreennavheight);
 }
 
 .contact-heading {
@@ -419,10 +424,6 @@ footer {
     color: white;
 }
 
-.copyright {
-    text-align: center;
-}
-
 .copyright p {
     margin: 0;
     padding: 10px;
@@ -491,24 +492,19 @@ footer {
     h3 {
         font-size: 1.3rem;
     }
-
-    [class*="service"] h3 {
-        height: 50px;
-        padding: 10px;
-    }
-
+    
     nav {
         justify-content: flex-end;
     }
-
+    
     .nav-logo {
         justify-self: flex-start;
     }
-
+    
     .logo {
         height: var(--smallscreennavheight);
     }
-
+    
     .nav-links {
         transform: translateX(100%);
         transition: all 0.3s ease 0s;
@@ -534,20 +530,24 @@ footer {
         background-color: var(--green);
         font-size: 1rem;
     }
-
+    
     button {
         margin: 0;
     }
-
+    
     .cta {
         font-size: 1rem;
     }
-
+    
     .burger-nav {
         display: block;
         background-color: var(--lightgray);
     }
-
+    
+    .headings {
+        top: var(--smallscreennavheight);
+    }
+    
     .burger-nav-active {
         transform: translateX(0%);
     }
@@ -562,13 +562,13 @@ footer {
     }
     
     .contact-heading, .landing-showcase video {
-    margin-top: var(--smallscreennavheight);
+        margin-top: var(--smallscreennavheight);
     } 
-
+    
     .company-info {
         grid-template-areas: 
-            "company-logo"
-            "company-info";
+        "company-logo"
+        "company-info";
         gap: 20px;
     }
     
@@ -586,15 +586,30 @@ footer {
     .info {
         width: 75%;
     }
-
+    
     .info p {
         font-size: 1rem;
     }
 
+    [class*="service"] h3 {
+        height: 50px;
+        padding: 10px;
+    }
+
+    .services {
+        grid-template-areas: 
+            "service1" 
+            "service2"
+            "service3"
+            "service4";
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0 0;
+    }
+    
     [class*="project-container"] {
         display: grid;
     }
-
+    
     .project-container1 {
         grid-template-areas: 
         "slides-outer1"
@@ -606,7 +621,7 @@ footer {
         "slides-outer2"
         "p-slide2";
     }
-
+    
     .project-container3 {
         grid-template-areas: 
         "slides-outer3"
@@ -614,23 +629,12 @@ footer {
     }
 
     .p-slide {
-        text-align: center;
         margin: 0 20px;
         padding: 0;
     }
 
     #p-slide2, #p-slide3 {
         margin-bottom: 20px;
-    }
-
-    .services {
-        grid-template-areas: 
-            "service1" 
-            "service2"
-            "service3"
-            "service4";
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0 0;
     }
 
     .info img {
@@ -689,7 +693,6 @@ footer {
     }
     
     .company-info p {
-        text-align: center;
         padding: 0 25px 15px 25px;
         font-size: 1.1rem;
     }
@@ -710,7 +713,7 @@ footer {
         margin-right: 15%;
     }
 
-    .social, a, i{
+    .social a i{
         margin-right: 1px;
         font-size: 2rem;
     }

@@ -431,6 +431,41 @@ footer {
     background-color: var(--green);
 }
 
+.gdpr {
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    background: var(--lightgray);
+    color: var(--green);
+    padding: 0 32px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.active {
+    display: block;
+    bottom: 0;
+}
+
+.gdpr p { 
+    background-color: var(--lightgray);
+    color: black;
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .gdpr-btn {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    border: 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
 /* For laptop screens */
 
 @media screen and (max-width: 1920px) {
@@ -653,6 +688,17 @@ footer {
         font-size: 0.9rem;
     }
 
+    .gdpr p { 
+        margin-top: 5px;
+        font-size: 1rem;
+      }
+      
+      .gdpr-btn {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        
+      }
+
 }
 
 /* For smartphone screens */
@@ -721,5 +767,10 @@ footer {
     .copyright p {
         font-size: 0.7rem;
     }
+
+    .gdpr p { 
+        margin-top: 5px;
+        font-size: 0.9rem;
+      }
     
 }

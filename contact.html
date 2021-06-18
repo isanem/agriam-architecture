@@ -1,107 +1,120 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Agriam Architecture</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/style/style.css">
-        <link href="//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <header>
-            <div class="nav-logo">
-                <a href="#">
-                    <img class="logo" src="assets/img/logo.jpg" alt="logo">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="/index.html#about">Om Mig</a></li>
-                    <li><a href="/index.html#services">Tjänster</a></li>
-                    <li><a href="/index.html#projects">Projekt</a></li>
-                </ul>
-                <div class="burger-nav">
-                    <div class="line-top"></div>
-                    <div class="line-mid"></div>
-                    <div class="line-bottom"></div>
-                </div>
-            </nav>
-        </header>
-        <div class="contact-heading">
-            <h1>Kontakt</h1>
-        </div>    
-        <section class="form">
-            <form action="">
-                <div class="form-field">
-                    <label for="Name" class="form-label">Namn</label>
-                    <div class="input-field">
-                        <input type="text" id="Name" name="Name" class="input-width" required>
-                    </div>
-                </div>
 
-                <div class="form-field">
-                    <label for="Tel" class="form-label">Telefon</label>
-                    <div class="input-field">
-                        <input type="tel" id="Tel" name="Tel" class="input-width" required>
-                    </div>
-                </div>
-        
-                <div class="form-field">
-                    <label for="Email" class="form-label">E-post</label>
-                    <div class="input-field">
-                        <input type="email" id="Email" name="Email" class="input-width" required>
-                    </div>
-                </div>
-        
-                <div class="form-field">
-                    <label for="Message" class="form-label">Meddelande</label>
-                    <div class="input-field">
-                        <textarea id="Message" name="Message" class="input-width" rows="7" maxlength="3000" required></textarea>
-                    </div>
-                </div>
-                <div class="form-button">
-                    <div>
-                        <button type="submit" id="form-button" class="cta">Skicka</button>
-                    </div>
-                </div>
-            </form>
-        </section>
-        <div>
-            <footer>
-                <div class="footer-nav">
-                    <ul>
-                        <li class="footer-links"><a class="footer-links" href="#about">Om Mig</a></li>
-                        <li class="footer-links"><a class="footer-links" href="#services">Tjänster</a></li>
-                        <li class="footer-links"><a class="footer-links" href="#projects">Projekt</a></li>
-                    </ul>
-                    <div class="social">
-                        <a target="_blank" href="https://www.linkedin.com/in/agriamarchitecture"><i class="fab fa-linkedin-in"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/agriamarchitecture/"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>Made with ♥ and ☕ by anjok web solutions - Copyright ©
-                        <script type="text/javascript">
-                            var today = new Date()
-                            var year = today.getFullYear()
-                            document.write(year)
-                        </script> 
-                    </p>
-                </div>
-            </footer>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Agriam Architecture</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-logo">
+            <a href="/index.html">
+                <img class="logo" src="assets/img/logo.jpg" alt="logo">
+            </a>
         </div>
-        <div class="gdpr">
-            <p>
-                Genom att fortsätta använda den här webbplatsen så accepterar jag att eventuella cookies lagras.
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html#about">Om Mig</a></li>
+                <li><a href="/index.html#services">Tjänster</a></li>
+                <li><a href="/index.html#projects">Projekt</a></li>
+            </ul>
+            <div class="burger-nav">
+                <div class="line-top"></div>
+                <div class="line-mid"></div>
+                <div class="line-bottom"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Form Section -->
+
+    <div class="contact-heading">
+        <h1>Kontakt</h1>
+    </div>
+    <section class="form">
+        <form>
+            <div class="form-field">
+                <label for="Name">Namn</label>
+                <div>
+                    <input type="text" id="Name" name="Name" class="input-width" required>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="Tel">Telefon</label>
+                <div>
+                    <input type="tel" id="Tel" name="Tel" class="input-width" required>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="Email">E-post</label>
+                <div>
+                    <input type="email" id="Email" name="Email" class="input-width" required>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="Message">Meddelande</label>
+                <div>
+                    <textarea id="Message" name="Message" class="input-width" rows="7" maxlength="3000"
+                        required></textarea>
+                </div>
+            </div>
+
+            <div class="form-button">
+                <div>
+                    <button type="submit" id="form-button" class="cta">Skicka</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="footer-info">
+            <ul>
+                <li class="footer-contacts">Kontaktuppgifter</li>
+                <li class="footer-contacts"><i class="fas fa-phone fa-sm"></i>0705-55 55 55</li>
+                <li class="footer-contacts"><i class="fas fa-at fa-sm"></i>info(at)agriam.se</li>
+            </ul>
+            <div class="social">
+                <a target="_blank" href="https://www.linkedin.com/in/agriamarchitecture"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://www.instagram.com/agriamarchitecture/"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with ♥ and ☕ by anjok web solutions - Copyright ©
+                <script type="text/javascript">
+                    var today = new Date()
+                    var year = today.getFullYear()
+                    document.write(year)
+                </script>
             </p>
-            <button class="gdpr-btn">OK</button>
-          </div>        
-        <div>
+        </div>
+    </footer>
+
+    <div class="gdpr">
+        <p>
+            Genom att fortsätta använda den här webbplatsen så accepterar jag att eventuella cookies lagras.
+        </p>
+        <button class="gdpr-btn">OK</button>
+    </div>
+    <div>
 
         <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"> </script>
 
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/601324f7cb.js" crossorigin="anonymous"></script>
@@ -109,6 +122,7 @@
         <!-- Custom Javasript -->
         <script src="assets/js/burger.js"></script>
         <script src="assets/js/gdpr.js"></script>
-        
-    </body>
+
+</body>
+
 </html>

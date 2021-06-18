@@ -1,8 +1,5 @@
 $(document).ready(function()
 {
-    
-
-    // Automatic slideshow in project 1
 
     var slide1Index = 0;
     autoSlide1();

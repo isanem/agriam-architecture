@@ -204,8 +204,7 @@ button:hover {
 }
 
 .overlay p {
-    background-color:rgba(0, 0, 0, 0.0);
-    
+    background-color:rgba(0, 0, 0, 0.0);    
     margin-left: 30%;
     color: var(--lightgray);
     font-family: "ISOCPEUR", sans-serif;
@@ -471,6 +470,7 @@ footer {
     padding: 0 32px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     text-align: center;
+    z-index: 1000;
 }
 
 .active {
@@ -615,6 +615,24 @@ footer {
     
     .burger-nav-active {
         transform: translateX(0%);
+    }
+
+    .overlay {
+        height: calc(100vh - var(--smallscreennavheight));
+        margin-top: var(--smallscreennavheight);
+    }
+    
+    .overlay h2 {
+        font-size: 2rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-top: 100px;
+        margin-left: 7%;
+    }
+    
+    .overlay p { 
+        margin-left: 15%;
+        font-size: 1.5rem;
     }
     
     .landing-showcase {
@@ -762,6 +780,17 @@ footer {
         letter-spacing: 0.05rem;
     }
     
+    .overlay h2 {
+        font-size: 1.8rem;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-top: 100px;
+    }
+    
+    .overlay p { 
+        font-size: 1.4rem;
+    }
+
     .company-info img {
         justify-self: center;
         padding: 15px 25px 0px 25px;

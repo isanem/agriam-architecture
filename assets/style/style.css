@@ -1,12 +1,17 @@
 @import url(//db.onlinewebfonts.com/c/4b5ae315f5df148f0ab479a7cedc9832?family=ISOCPEUR);
 @import url(https://fonts.googleapis.com/css2?family=Chonburi&display=swap);
 
-@font-face {font-family: "ISOCPEUR"; src: url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.eot"); 
-    src: url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.svg#ISOCPEUR") format("svg"); 
+
+/* Special Font Import */
+
+@font-face {
+    font-family: "ISOCPEUR";
+    src: url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.eot");
+    src: url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/4b5ae315f5df148f0ab479a7cedc9832.svg#ISOCPEUR") format("svg");
 }
 
 :root {
@@ -22,25 +27,25 @@
     padding: 0;
     background-color: white;
     text-decoration: none;
-
-    /* Fix positioning of headers when using links in combination with fixed navbar */
     scroll-padding-top: var(--bigscreennavheight);
 }
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Chonburi', sans-serif;
     text-transform: uppercase;
     margin: 0 auto;
     padding: 25px;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--lightgray);
     background-color: var(--green);
 }
 
-h1{
+h1 {
     font-size: 3.2rem;
 }
 
@@ -57,13 +62,12 @@ li {
     font-family: 'Chonburi', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    text-transform: uppercase;
 }
 
 p {
     font-family: "ISOCPEUR", sans-serif;
     margin-bottom: 25px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -113,6 +117,7 @@ nav {
 
 .nav-links li {
     background-color: var(--lightgray);
+    text-transform: uppercase;
 }
 
 .nav-links li a {
@@ -123,7 +128,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: white;
+    color: rgba(75, 91, 46, 0.4);
 }
 
 .nav-btn {
@@ -163,10 +168,12 @@ button:hover {
     height: 4px;
     margin: 5px;
     background-color: var(--green);
+    transition: 0.7s;
 }
 
 .toggle .line-top {
     transform: rotate(-45deg) translate(-5px, 6px);
+    transition: 0.8s;
 }
 
 .toggle .line-mid {
@@ -175,6 +182,7 @@ button:hover {
 
 .toggle .line-bottom {
     transform: rotate(45deg) translate(-6.5px, -7.5px);
+    transition: 0.8s;
 }
 
 .landing {
@@ -192,8 +200,8 @@ button:hover {
     z-index: 50;
 }
 
-.overlay h2 {
-    background-color:rgba(0, 0, 0, 0.0);
+.overlay h1 {
+    background-color: rgba(0, 0, 0, 0.0);
     color: var(--lightgray);
     font-family: 'Chonburi', sans-serif;
     font-size: 3rem;
@@ -204,7 +212,7 @@ button:hover {
 }
 
 .overlay p {
-    background-color:rgba(0, 0, 0, 0.0);    
+    background-color: rgba(0, 0, 0, 0.0);
     margin-left: 30%;
     color: var(--lightgray);
     font-family: "ISOCPEUR", sans-serif;
@@ -217,7 +225,7 @@ button:hover {
     top: var(--bigscreennavheight);
     left: 0;
     width: 100%;
-    height:calc(100vh - var(--bigscreennavheight));
+    height: calc(100vh - var(--bigscreennavheight));
     overflow: hidden;
 }
 
@@ -232,31 +240,38 @@ button:hover {
     min-height: 100%;
 }
 
-.brand, .headings {
+.brand,
+.headings {
     background-color: var(--green);
     letter-spacing: 2px;
 }
 
-.company-info {
+.company {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "company-logo company-info";
     gap: 40px;
 }
 
-.company-info img {
+.company img {
     grid-area: company-logo;
     padding: 15px 0px 15px 150px;
-
 }
 
-.company-info p {
+.company p {
     grid-area: company-info;
     padding: 15px 60px 15px 35px;
     font-size: 1.2rem;
 }
 
-.brand, .p-slide, .copyright, [class*="heading"] {
+.company-info h3 {
+    font-size: 1.8rem;
+}
+
+.brand,
+.p-slide,
+.copyright,
+[class*="heading"] {
     text-align: center;
 }
 
@@ -275,7 +290,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -283,18 +298,24 @@ button:hover {
     width: 300px;
 }
 
+
 .info li {
     font-family: "ISOCPEUR", sans-serif;
-    text-transform: none;
-
+    list-style: none;
 }
+
+.fa-pen-nib {
+    background-color: white;
+    color: var(--green);
+}
+
 [class*="service"] h3 {
     height: 125px;
     padding: 25px;
 }
 
 .services {
-    grid-template-areas: 
+    grid-template-areas:
         "service1 service2 service3 service4";
     grid-template-columns: repeat(4, 1fr);
     margin: 0 30px;
@@ -316,37 +337,37 @@ button:hover {
     grid-area: service4;
 }
 
-[class*="project-container"], .services {
+[class*="project-container"],
+.services {
     display: grid;
     gap: 18px 18px;
 }
 
 .project-container1 {
-    grid-template-areas: 
+    grid-template-areas:
         "slides-outer1 slides-outer1 p-slide1";
 }
 
 .project-container2 {
-    grid-template-areas: 
+    grid-template-areas:
         "p-slide2 slides-outer2 slides-outer2";
 }
 
 .project-container3 {
-    grid-template-areas: 
+    grid-template-areas:
         "slides-outer3 slides-outer3 p-slide3";
 }
-
-
 
 .slides-inner {
     overflow: hidden;
     padding: 40px;
 }
 
-.slides-inner img, .slides-inner video {
+.slides-inner img,
+.slides-inner video {
     width: 100%;
     padding: 15px;
-} 
+}
 
 #slides-outer1 {
     grid-area: slides-outer1;
@@ -392,7 +413,8 @@ form {
     line-height: 1.5;
 }
 
-label, input {
+label,
+input {
     font-family: "ISOCPEUR", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
@@ -403,7 +425,7 @@ label, input {
 }
 
 .form-button {
-    align-self: flex-end;    
+    align-self: flex-end;
     padding: 20px 0;
     margin-right: 23%;
 }
@@ -416,15 +438,21 @@ footer {
     color: var(--lightgray);
 }
 
-.footer-links {
-    font-family: 'Chonburi', sans-serif;
-    font-size: 1.2rem;
+.footer-contacts {
+    font-family: "ISOCPEUR", sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1.3rem;
     background-color: var(--green);
     color: var(--lightgray);
     list-style: none;
 }
 
-.footer-nav {
+.footer-contacts:nth-child(1) {
+    text-decoration: underline;
+}
+
+.footer-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -432,16 +460,12 @@ footer {
     background-color: var(--green);
 }
 
-.footer-links:hover {
-    color: white;
-}
-
 .social {
     background-color: var(--green);
-
 }
 
-.social a, i{
+.social a,
+i {
     background-color: var(--green);
     color: var(--lightgray);
     font-size: 2.5rem;
@@ -450,7 +474,7 @@ footer {
 }
 
 .social i:hover {
-    color: white;
+    color: rgba(207, 195, 195, 0.5);
 }
 
 .copyright p {
@@ -478,14 +502,14 @@ footer {
     bottom: 0;
 }
 
-.gdpr p { 
+.gdpr p {
     background-color: var(--lightgray);
     color: black;
     margin-top: 10px;
     font-size: 1.2rem;
-  }
-  
-  .gdpr-btn {
+}
+
+.gdpr-btn {
     font-family: "ISOCPEUR", sans-serif;
     font-weight: 500;
     border: 0;
@@ -494,7 +518,9 @@ footer {
     margin-bottom: 16px;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
+
+/* Media Queries */
 
 /* For laptop screens */
 
@@ -504,30 +530,29 @@ footer {
         width: 65%;
     }
 
-    .company-info img {
+    .company img {
         grid-area: company-logo;
         padding: 15px 0px 15px 60px;
     }
-    
-    .company-info p {
+
+    .company p {
         grid-area: company-info;
         padding: 15px 30px 15px 0px;
         font-size: 1.2rem;
     }
 
     .services {
-        grid-template-areas: 
+        grid-template-areas:
             "service1 service2"
             "service3 service4";
         grid-template-columns: repeat(2, 1fr);
         margin: 0 20px;
-        gap: 14px 14px;
+        gap: 14px 22px;
     }
 
     .slides-inner {
         padding: 10px;
     }
-
 }
 
 /* For tablet screens */
@@ -542,34 +567,36 @@ footer {
         height: var(--smallscreennavheight);
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         padding: 14px 5px;
     }
 
-    h1{    
+    h1 {
         font-size: 2.2rem;
     }
 
     h2 {
         font-size: 1.8rem;
     }
-    
+
     h3 {
         font-size: 1.3rem;
     }
-    
+
     nav {
         justify-content: flex-end;
     }
-    
+
     .nav-logo {
         justify-self: flex-start;
     }
-    
+
     .logo {
         height: var(--smallscreennavheight);
     }
-    
+
     .nav-links {
         transform: translateX(100%);
         transition: all 0.3s ease 0s;
@@ -585,34 +612,34 @@ footer {
         width: 35%;
         background-color: var(--green);
     }
-    
+
     .nav-links li {
         background-color: var(--green);
     }
-    
+
     .nav-links li a {
         color: var(--lightgray);
         background-color: var(--green);
         font-size: 1rem;
     }
-    
+
     button {
         margin: 0;
     }
-    
+
     .cta {
         font-size: 1rem;
     }
-    
+
     .burger-nav {
         display: block;
         background-color: var(--lightgray);
     }
-    
+
     .headings {
         top: var(--smallscreennavheight);
     }
-    
+
     .burger-nav-active {
         transform: translateX(0%);
     }
@@ -621,55 +648,60 @@ footer {
         height: calc(100vh - var(--smallscreennavheight));
         margin-top: var(--smallscreennavheight);
     }
-    
-    .overlay h2 {
+
+    .overlay h1 {
         font-size: 2rem;
         line-height: 1.5;
         text-transform: uppercase;
         margin-top: 100px;
         margin-left: 7%;
     }
-    
-    .overlay p { 
+
+    .overlay p {
         margin-left: 15%;
         font-size: 1.5rem;
     }
-    
+
     .landing-showcase {
         top: var(--smallscreennavheight);
-        height:calc(100vh - var(--smallscreennavheight));
+        height: calc(100vh - var(--smallscreennavheight));
     }
-    
+
     .landing-showcase video {
         top: calc(50% - var(--smallscreennavheight));
     }
-    
-    .contact-heading, .landing-showcase video {
+
+    .contact-heading,
+    .landing-showcase video {
         margin-top: var(--smallscreennavheight);
-    } 
-    
-    .company-info {
-        grid-template-areas: 
-        "company-logo"
-        "company-info";
-        gap: 20px;
     }
-    
-    .company-info img {
+
+    .company {
+        grid-template-areas:
+            "company-info"
+            "company-logo";
+        gap: 10px;
+    }
+
+    .company img {
         justify-self: center;
-        padding: 15px 25px 0px 25px;    
+        padding: 0px 25px 15px 25px;
     }
-    
+
+    .company-info h3 {
+        text-align: center;
+    }
+
     .company-info p {
         text-align: center;
-        padding: 0 25px 15px 25px;
+        padding: 15px 25px 0 25px;
         font-size: 1.1rem;
     }
-    
+
     .info {
         width: 75%;
     }
-    
+
     .info p {
         font-size: 1rem;
     }
@@ -680,35 +712,35 @@ footer {
     }
 
     .services {
-        grid-template-areas: 
-            "service1" 
+        grid-template-areas:
+            "service1"
             "service2"
             "service3"
             "service4";
         grid-template-columns: repeat(1, 1fr);
         gap: 0 0;
     }
-    
+
     [class*="project-container"] {
         display: grid;
     }
-    
+
     .project-container1 {
-        grid-template-areas: 
-        "slides-outer1"
-        "p-slide1";
+        grid-template-areas:
+            "slides-outer1"
+            "p-slide1";
     }
-    
+
     .project-container2 {
-        grid-template-areas: 
-        "slides-outer2"
-        "p-slide2";
+        grid-template-areas:
+            "slides-outer2"
+            "p-slide2";
     }
-    
+
     .project-container3 {
-        grid-template-areas: 
-        "slides-outer3"
-        "p-slide3";
+        grid-template-areas:
+            "slides-outer3"
+            "p-slide3";
     }
 
     .p-slide {
@@ -716,7 +748,8 @@ footer {
         padding: 0;
     }
 
-    #p-slide2, #p-slide3 {
+    #p-slide2,
+    #p-slide3 {
         margin-bottom: 20px;
     }
 
@@ -728,76 +761,79 @@ footer {
         width: 80%;
     }
 
-    .footer-links {
-        font-size: 1rem;
+    .footer-contacts {
+        font-size: 1.1rem;
     }
 
     .copyright p {
         font-size: 0.9rem;
     }
 
-    .gdpr p { 
+    .gdpr p {
         margin-top: 5px;
         font-size: 1rem;
-      }
-      
-      .gdpr-btn {
+    }
+
+    .gdpr-btn {
         font-size: 1rem;
         margin-bottom: 10px;
-        
-      }
-
+    }
 }
 
 /* For smartphone screens */
 
 @media screen and (max-width: 480px) {
-    
-    h1 {    
+
+    h1 {
         font-size: 1.6rem;
     }
 
     h2 {
         font-size: 1.4rem;
     }
-    
+
     h3 {
         font-size: 1rem;
     }
 
-    p, li {
+    p,
+    li {
         font-size: 0.9rem;
         line-height: 1.5;
     }
-    
+
     p {
         margin-bottom: 20px;
     }
 
-    .footer-links, .nav-links li a {
+    .nav-links li a {
         font-size: 0.8rem;
         line-height: 1.8;
         letter-spacing: 0.05rem;
     }
-    
-    .overlay h2 {
+
+    .overlay h1 {
         font-size: 1.8rem;
         line-height: 1.5;
         text-transform: uppercase;
         margin-top: 100px;
     }
-    
-    .overlay p { 
+
+    .overlay p {
         font-size: 1.4rem;
     }
 
-    .company-info img {
+    .company img {
         justify-self: center;
-        padding: 15px 25px 0px 25px;
-        width: 17rem;
+        padding: 0 25px 15px 25px;
+        width: 17.5rem;
     }
-    
-    .company-info p {
+
+    .company-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .company p {
         padding: 0 25px 15px 25px;
         font-size: 1.1rem;
     }
@@ -810,15 +846,21 @@ footer {
         margin-top: 20px;
         width: 70%;
     }
-    
-    label, input {
+
+    label,
+    input {
         font-size: 1.2rem;
     }
+
     .form-button {
         margin-right: 15%;
     }
 
-    .social a i{
+    .footer-contacts {
+        font-size: 1rem;
+    }
+
+    .social a i {
         margin-right: 1px;
         font-size: 2rem;
     }
@@ -827,9 +869,8 @@ footer {
         font-size: 0.7rem;
     }
 
-    .gdpr p { 
+    .gdpr p {
         margin-top: 5px;
         font-size: 0.9rem;
-      }
-    
+    }
 }
